@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="hero">
+        <input id="display" readonly />
+        <input dir="rtl" id="calculated" readonly />
+        <div class="buTTon">
+          <button
+            id="buttonOne"
+            class="clear lightgrey"
+            onclick="clearContent()"
+          >
+            AC
+          </button>
+          <button
+            id="buttonOne"
+            class="plusMinus lightgrey"
+            onclick="appendToDisplay()"
+          >
+            +/-
+          </button>
+          <button
+            id="buttonOne"
+            class="percentage lightgrey"
+            onclick="appendToDisplay('%')"
+          >
+            %
+          </button>
+          <button class="divide yellow" onclick="appendToDisplay('/')">
+            /
+          </button>
+          <button class="seven darkgrey" onclick="appendToDisplay('7')">
+            7
+          </button>
+          <button class="eight darkgrey" onclick="appendToDisplay('8')">
+            8
+          </button>
+          <button class="nine darkgrey" onclick="appendToDisplay('9')">
+            9
+          </button>
+          <button class="multiply yellow" onclick="appendToDisplay('*')">
+            x
+          </button>
+          <button class="four darkgrey" onclick="appendToDisplay('4')">
+            4
+          </button>
+          <button class="five darkgrey" onclick="appendToDisplay('5')">
+            5
+          </button>
+          <button class="six darkgrey" onclick="appendToDisplay('6')">6</button>
+          <button class="minus yellow" onclick="appendToDisplay('-')">-</button>
+          <button class="one darkgrey" onclick="appendToDisplay('1')">1</button>
+          <button class="two darkgrey" onclick="appendToDisplay('2')">2</button>
+          <button class="three darkgrey" onclick="appendToDisplay('3')">
+            3
+          </button>
+          <button class="plus yellow" onclick="appendToDisplay('+')">+</button>
+          <button class="zero" onclick="appendToDisplay('0')">0</button>
+          <button class="point darkgrey" onclick="appendToDisplay('.')">
+            .
+          </button>
+          <button class="equals yellow" onclick="calculateAnswer()">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="calculator.js"></script>
+</html>
